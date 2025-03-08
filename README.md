@@ -1,5 +1,4 @@
 # realtime-log-processor
-# realtime-log-processor
 Node.js Exercise: Real-Time File Processing Microservice with BullMQ, Next.js, Supabase, and Docker
 Objective
 Build a full-stack application featuring a Node.js microservice that processes large log files asynchronously using BullMQ, a Next.js frontend with React for real-time analytics, and Supabase for authentication and database storage. Deploy the entire system using Docker. The solution must leverage the latest versions of Next.js (15.x), React (18.x), and Node.js (20.x).
