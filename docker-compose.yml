@@ -1,4 +1,3 @@
-version: "3.8"
 
 services:
   frontend:
@@ -30,6 +29,11 @@ services:
     command: npm run start:dev
     networks:
       - app-network
+  redis:
+    image: redis
+    container_name: redis
+    ports:
+      - "6379:6379"
 
 networks:
   app-network:

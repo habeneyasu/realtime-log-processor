@@ -12,11 +12,19 @@ export default function LoginForm() {
     setLoading(true);
     setError(null);
 
+    // Basic email validation
+    if (!email || !/\S+@\S+\.\S+/.test(email)) {
+      setError('Please enter a valid email address.');
+      setLoading(false);
+      return;
+    }
+
     try {
       const userData = await login(email, password);
       console.log('Logged in user:', userData);
       // Redirect or update state as necessary
     } catch (error: any) {
+      console.error('Login error:', error); // Log error details for debugging
       setError(error.message || 'Invalid login credentials. Please try again.');
     } finally {
       setLoading(false);

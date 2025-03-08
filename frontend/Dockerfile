@@ -15,7 +15,7 @@ RUN npm install
 COPY . .
 
 # Build the Next.js application
-RUN npm run build
+RUN npm run build 
 
 # Use a smaller image for the final stage
 FROM node:20-alpine AS production
