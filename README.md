@@ -99,8 +99,8 @@ docker-compose.yml: Orchestrates Redis, Supabase, and the Next.js app containers
 README.md: Setup instructions, benchmarks, and code walkthrough.
 Sample Log File: A 10MB sample log file for testing, placed at backend/logs/large-log-file.log.
 Benchmarks
-# File Processing: The system should be capable of processing a 1GB log file in under 5 minutes.
-# Concurrency: Process 4 jobs concurrently with BullMQ.
+File Processing: The system should be capable of processing a 1GB log file in under 5 minutes.
+Concurrency: Process 4 jobs concurrently with BullMQ.
 What Could Be Improved
 Caching
 Implement caching mechanisms for frequently accessed stats to improve performance.
